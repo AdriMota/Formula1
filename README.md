@@ -94,7 +94,7 @@ Les données récupérées seront de type numérique, de chaîne de caractères 
 ## But
 L'objectif principal de ce projet est de découvrir les circuits sur lesquels il y a le plus d'accidents. L'API ne donne pas tous les détails des accidents, ce qui rend difficile de déterminer les raisons pour lesquelles ces derniers ont lieu.
 
-Le but secondaire est de faire un top 3 des pilotes ayant eu le plus d'accidents par année.
+Le but secondaire est de faire un top 5 des pilotes ayant eu le plus d'accidents par année.
 
 ## Références
 La [galerie d'applications](http://ergast.com/mrd/gallery/) regroupe des exemples d'applications réalisées à partir de l'API Ergast.
