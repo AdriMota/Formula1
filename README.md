@@ -92,7 +92,7 @@ Afin d'avoir des données continuellement à jour, le projet sera réalisé via 
 Les données récupérées seront de type numérique, de chaîne de caractères ou de type date.
 
 ## But
-L'objectif principal de ce projet est de découvrir les circuits sur lesquels il y a le plus d'accidents. L'API ne donne pas d'informations sur le niveau de sécurité des pistes, ce qui rend difficile de déterminer les raisons pour lesquelles les accidents ont lieu.
+L'objectif principal de ce projet est de découvrir les circuits sur lesquels il y a le plus d'accidents. L'API ne donne pas tous les détails des accidents, ce qui rend difficile de déterminer les raisons pour lesquelles ces derniers ont lieu.
 
 Le but secondaire est de faire un top 3 des pilotes ayant eu le plus d'accidents par année.
 
