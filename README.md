@@ -89,10 +89,7 @@ Afin d'avoir des données continuellement à jour, le projet sera réalisé via 
 * Statut :
   * Statut
 
-Les données récupérées seront de type numérique, de chaîne de caractères ou de type date. **URLs ??**
-
-*Comment sont structurées les données ? Parler du format, des attributs et du type de données*
-
+Les données récupérées seront de type numérique, de chaîne de caractères ou de type date.
 
 ## But
 L'objectif principal de ce projet est de découvrir les circuits sur lesquels il y a le plus d'accidents. L'API ne donne pas d'informations sur le niveau de sécurité des pistes, ce qui rend difficile de déterminer les raisons pour lesquelles les accidents ont lieu.
