@@ -48,4 +48,10 @@ La rubrique [Ergast API Topic](https://github.com/topics/ergast-api) regroupe le
 ****
 
 # Prototype 
-Le prototype de ce projet est accessible depuis [ce lien Figma](https://www.figma.com/proto/YqYlGlrm3LA8b0xfBKB89D/Formula_1-Wireframe?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.57&scaling=contain&starting-point-node-id=1%3A2).
+Le prototype de ce projet est accessible depuis [ce lien Figma](https://www.figma.com/proto/YqYlGlrm3LA8b0xfBKB89D/Formula_1-Wireframe?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.57&scaling=contain&starting-point-node-id=1%3A2). En cas de problème avec le lien, voici l'interface :
+<img width="1694" alt="Accueil" src="https://user-images.githubusercontent.com/44058575/159088434-ac285389-405b-4a78-b302-931f74ec6a26.png">
+<img width="1694" alt="Accueil-zoom" src="https://user-images.githubusercontent.com/44058575/159088577-ea3c2c79-0a8c-4e75-9306-c3766ba513e2.png">
+<img width="1694" alt="Circuits" src="https://user-images.githubusercontent.com/44058575/159088684-c852e066-a229-4142-9a4f-cbc04d975531.png">
+<img width="1694" alt="Pilotes" src="https://user-images.githubusercontent.com/44058575/159088792-bcbd6c13-6269-4a74-90bd-0f55d84ad2d3.png">
+<img width="1694" alt="Ecuries" src="https://user-images.githubusercontent.com/44058575/159088934-41c2b9aa-207a-45c5-a48d-2faaf427fc65.png">
+<img width="1694" alt="Projet" src="https://user-images.githubusercontent.com/44058575/159089054-7747d3e7-7e88-4bf3-a5af-aa32c8f054d1.png">
