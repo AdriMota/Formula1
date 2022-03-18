@@ -44,3 +44,8 @@ Le but secondaire est de faire un top 5 des pilotes ayant eu le plus d'accidents
 ## Références
 La [galerie d'applications](http://ergast.com/mrd/gallery/) regroupe des exemples d'applications réalisées à partir de l'API Ergast.
 La rubrique [Ergast API Topic](https://github.com/topics/ergast-api) regroupe le code source de différents projets utilisant l'API Ergast.
+
+****
+
+# Prototype 
+Le prototype de ce projet est accessible depuis [ce lien Figma](https://www.figma.com/proto/YqYlGlrm3LA8b0xfBKB89D/Formula_1-Wireframe?page-id=0%3A1&node-id=1%3A2&viewport=241%2C48%2C0.57&scaling=contain&starting-point-node-id=1%3A2).
