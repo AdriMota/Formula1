@@ -1,7 +1,5 @@
-# Formula1
-Projet sur la thématique de la **Formule 1** réalisé pour le cours de visualisation de données.
-
-## Contexte
+# Contexte
+## Sources des données
 ### Données des courses
 Les données utilisées pour ce projet proviennent d'une API ayant des données sur les championnats de Formule 1 dès 1950, date à laquelle les championnats du monde de F1 ont commencé. L'API est mise à disposition sur [Ergast](http://ergast.com/) et est règlementée par des [termes et conditions d'utilisation](http://ergast.com/mrd/terms/).
 
