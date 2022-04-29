@@ -1,0 +1,16 @@
+:root {
+    /* Colors */
+    --color-white: white;
+    --color-red: #E10600;
+    --color-light-gray: #38383F;
+    --color-dark-gray: #15151E;
+    --color-black:black;
+  
+    /* Globals */
+    --border-radius: 15px;
+    --box-shadow: 10px 0px 60px rgba(255, 6, 0, 0.25);
+    --box-shadow-light: 10px 0px 60px rgba(255, 6, 0, 0.1);
+  
+    /* Animations */
+    --default-transition: 300ms ease-in-out;
+}

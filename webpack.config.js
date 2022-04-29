@@ -1,4 +1,4 @@
-const path = require('path');const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path'); const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './public/index.html',
@@ -16,8 +16,13 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
             { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-            {test: /\.csv$/, loader: 'csv-loader', options: {
+            {
+                test: /\.csv$/, loader: 'csv-loader', options: {
                     dynamicTyping: true,
                     header: true,
                     skipEmptyLines: true

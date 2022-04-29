@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <title>03-d3-data</title>
+    <title>Formule 1</title>
     <link rel="shortcut icon" href="../assets/img/favicon.ico">
-</head>
-<body>
 
+    <!-- Fonts google pour les icônes et la police par défaut -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" />
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v6.js"></script>
+
+
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    <!-- Stylesheet principal -->
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+
+    <!-- Map Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+</head>
+
+<body>
+    <main>
+        <!----------------------------------------------------------------------------------
+            MENU
+        <---------------------------------------------------------------------------------->
+        <div class="side-nav">
+            <a href="#" class="logo">
+                <img src="./logo.png" class="logo-img">
+            </a>
+
+            <ul class="nav-links">
+                <li class="menu menu-active"><a href="#home">
+                        <span class="material-icons icon">roofing</span>
+                        <span>Accueil</span>
+                        <span class="material-icons chevron">chevron_right</span>
+                    </a></li>
+                <li class="menu"><a href="#">
+                        <span class="material-icons icon">place</span>
+                        <span>Circuits</span>
+                        <span class="material-icons chevron">chevron_right</span>
+                    </a></li>
+                <li class="menu"><a href="#">
+                        <span class="material-icons icon">sports_motorsports</span>
+                        <span>Pilotes</span>
+                        <span class="material-icons chevron">chevron_right</span>
+                    </a></li>
+                <li class="menu"><a href="#">
+                        <span class="material-icons icon">directions_car</span>
+                        <span>Écuries</span>
+                        <span class="material-icons chevron">chevron_right</span>
+                    </a></li>
+                <li class="menu"><a href="#">
+                        <span class="material-icons icon">question_mark</span>
+                        <span>Projet</span>
+                        <span class="material-icons chevron">chevron_right</span>
+                    </a></li>
+            </ul>
+        </div>
+
+
+        <!----------------------------------------------------------------------------------
+            ACCUEIL
+        <---------------------------------------------------------------------------------->
+        <section id="home" class="active">
+            <header>
+                <h1>Accidents en Formule 1</h1>
+                <div class="timeline">
+                    <input id="timeline" type="range" min="1950" step="1">
+                    <output id="year"></output>
+                    <!--<h3 class="value">2022</h3>-->
+                </div>
+            </header>
+            <div id="div-map">
+                <!-- Create an element where the map will take place -->
+                <div id="map">
+                    <div id="popup">
+                        <h1 id="circuitName">Coucou</h1>
+                        <p id="circuitDescription">Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte. Ceci est du texte.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+
+        <!----------------------------------------------------------------------------------
+            CIRCUITS
+        <---------------------------------------------------------------------------------->
+
+
+
+        <!----------------------------------------------------------------------------------
+            PILOTES
+        <---------------------------------------------------------------------------------->
+
+
+
+        <!----------------------------------------------------------------------------------
+            ÉCURIES
+        <---------------------------------------------------------------------------------->
+
+
+
+        <!----------------------------------------------------------------------------------
+            PROJET
+        <---------------------------------------------------------------------------------->
+
+
+    </main>
+
+</body>
 
 </html>

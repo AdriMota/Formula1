@@ -1,12 +1,19 @@
-import * as d3 from 'd3';
-
-import file from '../data/income_per_person_gdppercapita_ppp_inflation_adjusted.csv';
-//import file from '../data/life_expectancy_years.csv';
-//import file from '../data/population_total.csv';
-
-// Pour importer les données
-// import file from '../data/data.csv'
+import * as d3 from 'd3'
+import './css/index.css'
+import './js/timeline.js'
+import './js/map.js'
 
 
+// ------------------------------------------------------------------------
+// MENU
+// ------------------------------------------------------------------------
+let menus = document.getElementsByClassName("menu");
 
-
+// Loop through the menus and add the active class to the current/clicked button
+for (let i = 0; i < menus.length; i++) {
+    menus[i].addEventListener("click", function () {
+        let current = document.getElementsByClassName("menu-active");
+        current[0].className = current[0].className.replace(" menu-active", "");
+        this.className += " menu-active";
+    });
+}
