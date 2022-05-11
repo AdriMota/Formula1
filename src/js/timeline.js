@@ -1,6 +1,7 @@
 import { domOn } from '../lib/dom.js';
 import { state } from './state.js';
-import { renderCircuits, deleteCircuits, renderAccidents } from './map.js';
+import { renderCircuits, deleteCircuits } from '../sections/map.js';
+import { renderTop3Circuits, deleteTop3Circuits } from '../sections/circuits.js';
 
 /* ----------------------------------------------------------------------------------
     Déterminer l'année max de la timeline
@@ -43,8 +44,7 @@ timeline.oninput = function () {
 domOn('input', 'change', event => {
     state.yearSelected = timeline.getAttribute('value');
     deleteCircuits();
-    renderAccidents();
     renderCircuits();
+    deleteTop3Circuits();
+    renderTop3Circuits();
 })
-
-//export { yearSelected };

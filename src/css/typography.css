@@ -7,20 +7,79 @@
 h1 {
     font-size: 1.75rem;
     font-weight: 600;
-    width: 50%;
     margin: auto;
     margin-left: 0;
 }
 
+h1#circuitName {
+    margin-bottom: 2%;
+}
+
 h2 {
-    font-size: 1.5em;
-    font-weight: 100;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 h3, output {
     font-size: 1.4em;
     font-weight: 750;
     color: var(--color-red);
+}
+
+th {
+    font-weight: 400;
+}
+
+td {
+    text-align: center;
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.left-align {
+    text-align: left;
+    padding-left: 4%;
+}
+
+.no-data {
+    color: var(--color-red);
+    text-align: center;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+#description1, #description2, #description3 {
+    font-size: 13px;
+}
+
+#more {
+    color: var(--color-red);
+    float: right;
+    text-align: right;
+    width: 100%;
+    margin: 2% 0px;
+}
+
+.inFrontOfMap {
+    color: var(--color-white);
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+.legende {
+    color: var(--color-white);
+    width: 70%;
+}
+
+.bottom {
+    margin-bottom: 4%;
+}
+
+#accidents {
+    text-align: center;
 }
 
 

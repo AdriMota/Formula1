@@ -1,25 +1,28 @@
-/*********************************************************************************/
-/* HTML et BODY */
+/* ----------------------------------------------------------------------------------
+    HTML, MAIN, BODY
+-----------------------------------------------------------------------------------*/
 html, body {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 249, 249);
+    display: flex;
 }
   
 main {
     display: flex;
-    width: 100%;
     height: 100%;
+    flex: 1;
+    flex-direction: column;
 }
   
 
-/*********************************************************************************/
-/* HEADER */
+/* ----------------------------------------------------------------------------------
+    NAVIGATION
+-----------------------------------------------------------------------------------*/
 .side-nav {
     width: 200px;
-    height: 100vh;
+    
     background-color: var(--color-white);
-    position: fixed; /* position: sticky */
     padding: 30px;
     box-shadow: var(--box-shadow);
 }
@@ -39,14 +42,13 @@ main {
 }
 
 .nav-links li {
-    padding: 0px 15px;
     margin-bottom: 15px;
 }
 
 .nav-links li a {
     color: var(--color-black);
     text-decoration: none;
-    padding: 10px 0px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
 }
@@ -65,14 +67,170 @@ main {
     border-radius: var(--border-radius); 
 }
 
+.menu:hover {
+    background-color: rgba(255, 6, 0, 0.1);
+    border-radius: var(--border-radius); 
+}
+
 .menu-active span {
     color: var(--color-white);
 }
 
 
-/*********************************************************************************/
-/* SECTIONS */
-section {
-    margin-left: 260px;
+/* ----------------------------------------------------------------------------------
+    HEADER
+-----------------------------------------------------------------------------------*/
+header {
+    display: flex;
+    height: min-content; 
+    padding: 2% 3%;
+}
+
+/* ----------------------------------------------------------------------------------
+    TIMELINE
+-----------------------------------------------------------------------------------*/
+.timeline {
+    width: 30%;
+    text-align: right;
+}
+
+input {
+    display: block;
+    margin: auto;
+}
+  
+output {
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background-color: var(--color-dark-gray);
     width: 100%;
+    height: 8px;
+    border-radius: var(--border-radius);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: var(--color-red);
+    width: 30px;
+    height: 30px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--color-white);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: var(--color-red);
+    border: 2px solid var(--color-white);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.5);
+}
+
+
+/* ----------------------------------------------------------------------------------
+    SECTIONS
+-----------------------------------------------------------------------------------*/
+section {
+   flex: 1;
+   height: calc(100% - 60px - 30%);
+   padding: 0% 3% 3% 3%;
+   display: none;
+}
+
+section.active {
+    display: block;
+}
+
+hr {
+    border-top: 2px solid var(--color-dark-gray);
+    margin: 2% 10%;
+}
+
+
+/* ----------------------------------------------------------------------------------
+    BOXES
+-----------------------------------------------------------------------------------*/
+.big-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    border-radius: var(--border-radius);
+}
+
+.horizontal-container {
+    height: 48%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius);
+}
+
+.small-container {
+    height: 48%;
+    width: 49%;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-light);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+}
+
+.division {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle {
+    border-left: 1px solid var(--color-light-gray);
+    border-right: 1px solid var(--color-light-gray);
+}
+
+.division > .illustration, .division > h2 {
+    width: 90%;
+    margin: auto;
+}
+
+.small-container > h2 {
+    margin: 2% 2% 0% 2%;
+}
+
+
+/* ----------------------------------------------------------------------------------
+    TABLES
+-----------------------------------------------------------------------------------*/
+.table-responsive {
+    margin: 0% 2% 2% 2%;
+    height: 85%;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.firstLine {
+    border-bottom: 1px solid var(--color-light-gray);
+    vertical-align: bottom;
+}
+
+.right-column {
+    width: 15%;
 }

@@ -46,15 +46,42 @@ async function getCollisions() {
     return collisions;
 }
 
-export { getCircuits, getAccidents, getCollisions }
+// Retourne la vitesse
+async function getResults() {
+    const year = state.yearSelected;
 
-/* Promise.all([
-    json(URL_TRACKS)
-])
+    const URL_RESULT = 'https://ergast.com/api/f1/' + year + '/results.json?limit=1000'
 
-    // LOCALISATION DES CIRCUITS
-    .then(([tracks]) => {
-        const circuits = tracks.MRData.CircuitTable.Circuits;
+    const resultList = await loadJson(`${URL_RESULT}`);
+    const results = resultList.MRData.RaceTable.Races;
+
+    return results;
+}
+
+// Retourne une description
+async function getDescription(url, place) {
+    let replaceURL = url.replace("http:\/\/en.wikipedia.org\/wiki\/", "");
+    let description = [];
+
+    $.ajax({
+        url: "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&titles=" + replaceURL + "&exsentences=1&exintro=1&explaintext=1&exsectionformat=plain&origin=*&redirects",
+        dataType: "json",
+        success: function (data) {
+
+            let pageid = [];
+            for (let id in data.query.pages) {
+                pageid.push(id);
+            }
+            
+            document.getElementById("description" + place).textContent = data.query.pages[pageid[0]].extract;
+
+        },
+        error: function (xhr) {
+            alert(xhr.statusText)
+        }
     })
+    
+    return description;
+}
 
-console.log(circuits); */
+export { getCircuits, getAccidents, getCollisions, getDescription, getResults }
