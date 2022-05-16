@@ -1,4 +1,4 @@
-import * as d3 from 'd3'
+import * as d3 from 'd3';
 import circuitsLayout from '../lib/circuitsLayout.json';
 import { getCircuits, getAccidents, getCollisions } from '../api.js';
 import L, { latLng } from 'leaflet';
@@ -106,8 +106,6 @@ async function renderAccidents() {
     }
 
 }
-
-export { renderCircuits, deleteCircuits }
 
 /* ----------------------------------------------------------------------------------
     CERCLES
@@ -237,12 +235,13 @@ function showPopup(event) {
         }        
     }
     
-    const lat = event.latlng.lat;
-    const long = event.latlng.lng + 0.015;
+    let lat = event.latlng.lat;
+    let long = event.latlng.lng + 0.015;
 
     if(centerTrack === null || centerTrack === undefined) {
         // S'il n'y a pas de tracé, zoom sur le centre du cercle (markeur)
         map.flyTo(latLng(lat, long), 15, { 'duration' : 1.2 })
+        centerTrack = null;     
     } else {
         // S'il y a un tracé, zoom sur le centre du tracé
         map.flyToBounds(centerTrack, { 'duration' : 1.2, 'maxZoom': 15.8, 'paddingBottomRight': [750, 0] })
@@ -263,6 +262,7 @@ closer.addEventListener('click', function() {
 // Trouve les limites du circuit afin de pouvoir zoomé au centre de celui-ci
 let centerTrack = null;
 function getTrackLimits(nameCircuit, localityCircuit) {
+
     for (const track of circuitsLayout.features) {
         if(track.properties.Name.includes(nameCircuit)) {
             let bound1 = [track.bbox[3], track.bbox[0] ];
@@ -272,12 +272,8 @@ function getTrackLimits(nameCircuit, localityCircuit) {
             let bound1 = [track.bbox[3], track.bbox[0] ];
             let bound2 = [track.bbox[1], track.bbox[2]];
             centerTrack = L.latLngBounds(bound2,bound1);            
-        }        
-    }        
+        }
+    }
 }
 
-// Charger les images
-async function renderImages() {
-    images = await getImages()
-    //console.log(circuits);
-}
+export { renderCircuits, deleteCircuits }

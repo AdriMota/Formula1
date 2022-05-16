@@ -1,3 +1,5 @@
 #circuitLine1, #circuitLine2, #circuitLine3 {
     height: 100%;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
 }
