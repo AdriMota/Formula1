@@ -10,6 +10,7 @@
 }
 
 #map {
+    background-color: black;
     border-radius: var(--border-radius);
     height: 100%;
     position: relative;
