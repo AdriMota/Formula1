@@ -25,7 +25,7 @@ async function getAccidents() {
     const year = state.yearSelected;
     const accident = state.accident;
 
-    const URL_ACCIDENTS = 'http://ergast.com/api/f1/' + year + '/status/' + accident + '/results.json?limit=100'
+    const URL_ACCIDENTS = 'https://ergast.com/api/f1/' + year + '/status/' + accident + '/results.json?limit=100'
 
     const accidentsList = await loadJson(`${URL_ACCIDENTS}`);
     const accidents = accidentsList.MRData.RaceTable.Races;
@@ -38,7 +38,7 @@ async function getCollisions() {
     const year = state.yearSelected;
     const collision = state.collision;
 
-    const URL_COLLISIONS = 'http://ergast.com/api/f1/' + year + '/status/' + collision + '/results.json?limit=100'
+    const URL_COLLISIONS = 'https://ergast.com/api/f1/' + year + '/status/' + collision + '/results.json?limit=100'
 
     const collisionsList = await loadJson(`${URL_COLLISIONS}`);
     const collisions = collisionsList.MRData.RaceTable.Races;
