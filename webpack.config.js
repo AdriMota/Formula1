@@ -32,7 +32,7 @@ module.exports = {
         
     },
     devServer: {
-        allowedHosts: 'auto'
+        allowedHosts: 'all'
     },
     plugins: [HtmlWebpackPluginConfig]
 }
