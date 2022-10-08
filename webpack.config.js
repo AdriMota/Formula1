@@ -31,5 +31,8 @@ module.exports = {
         ]
         
     },
+    devServer: {
+        allowedHosts: 'auto'
+    },
     plugins: [HtmlWebpackPluginConfig]
 }
