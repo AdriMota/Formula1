@@ -4,6 +4,11 @@ import './sections/map.js'
 import { renderTop3Circuits, deleteTop3Circuits } from './sections/circuits.js';
 import './sections/circuits.js'
 
+
+if (process.env.NODE_ENV !== 'production') {
+       console.log('Looks like we are in development mode!');
+     }
+
 /* ----------------------------------------------------------------------------------
     TOGGLES
 -----------------------------------------------------------------------------------*/
