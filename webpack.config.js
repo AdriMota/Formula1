@@ -8,7 +8,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
     name: 'browser',
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         path: path.resolve('dist'),
@@ -29,6 +29,7 @@ module.exports = {
                 }
             }
         ]
+
     },
     plugins: [HtmlWebpackPluginConfig]
 }
