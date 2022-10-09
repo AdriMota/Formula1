@@ -34,8 +34,11 @@ module.exports = {
         
     },
     devServer: {
-        allowedHosts: 'all'
+       // allowedHosts: 'all'
+       hot: true
     },
+    target: 'web',
+    
     plugins: [HtmlWebpackPluginConfig]
 }
 
