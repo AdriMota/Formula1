@@ -34,8 +34,9 @@ module.exports = {
         
     },
     devServer: {
-       // allowedHosts: 'all'
-       hot: true
+       allowedHosts: 'all',
+       hot: false
+       
     },
     target: 'web',
     
