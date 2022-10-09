@@ -37,7 +37,8 @@ module.exports = {
        allowedHosts: 'all',
        hot: false,
        liveReload: false,
-       webSocketServer: false
+       webSocketServer: false,
+       https: true
        
     },
     target: 'web',
