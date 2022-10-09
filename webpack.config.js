@@ -35,7 +35,8 @@ module.exports = {
     },
     devServer: {
        allowedHosts: 'all',
-       hot: false
+       hot: false,
+       liveReload: false
        
     },
     target: 'web',
