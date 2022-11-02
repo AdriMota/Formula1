@@ -1,4 +1,7 @@
-const path = require('path'); const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path'); 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './public/index.html',
@@ -8,11 +11,21 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
     name: 'browser',
-    mode: 'development',
+    mode: 'production',
+    devtool: 'source-map',
     entry: './src/index.js',
     output: {
         path: path.resolve('dist'),
         filename: 'index_bundle.js'
+    },
+    optimization: {
+        minimizer: [
+            new CssMinimizerPlugin(),
+        ],
+    },
+    performance: {
+        maxAssetSize: 1100000,
+        maxEntrypointSize: 1100000,
     },
     module: {
         rules: [
@@ -34,5 +47,12 @@ module.exports = {
     devServer: {
         allowedHosts: 'all'
     },
-    plugins: [HtmlWebpackPluginConfig]
+    plugins: [
+        HtmlWebpackPluginConfig,
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css",
+            ignoreOrder: false, // Enable to remove warnings about conflicting order
+        })
+    ]
 }
