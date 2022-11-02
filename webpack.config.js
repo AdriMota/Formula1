@@ -17,6 +17,7 @@ module.exports = {
     output: {
         path: path.resolve('dist'),
         filename: 'index_bundle.js',
+        clean: true,
         assetModuleFilename: 'public/[name].[ext]'
     },
     optimization: {
