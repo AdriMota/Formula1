@@ -42,7 +42,11 @@ module.exports = {
                     header: true,
                     skipEmptyLines: true
                 }
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'assets/img',
+              },
         ]
         
     },
